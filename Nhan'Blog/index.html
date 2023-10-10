@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nhân' Blog</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/superfish.js"></script>
+  <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/tms-0.4.1.js"></script>
+  <script src="js/jquery.ui.totop.js"></script>
+  <script>
+    $(window).load(function () {
+      $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+      })
+    });
+    $(window).load(function () {
+      $('.carousel1').carouFredSel({
+        auto: false,
+        prev: '.prev',
+        next: '.next',
+        width: 960,
+        items: {
+          visible: {
+            min: 3,
+            max: 3
+          },
+          height: 'auto',
+          width: 300,
+        },
+        responsive: true,
+        scroll: 1,
+        mousewheel: false,
+        swipe: {
+          onMouse: true,
+          onTouch: true
+        }
+      });
+    });
+    jQuery(document).ready(function () {
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+    });
+  </script>
+  <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+
+<body class="page1">
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <h1><a href="index.html"><img src="images/Bronya.png" alt=""></a> </h1>
+        <a href="index.html" class="navbar-brand ms-lg-5">
+          <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Nhân's Blog</h1>
+        </a>
+        <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+              <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+
+              <li class="with_ul"><a href="about.html">About</a>
+
+
+                <!-- <ul>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Archive</a></li>
+              </ul> -->
+              </li>
+              <!-- <li><a href="services.html">Services</a></li> -->
+
+              <li><a href="contacts.html">Contacts </a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+  <div class="top_block">
+    <div class="slider-relative">
+      <div class="slider-block">
+        <div class="slider">
+          <ul class="items">
+            <li><img src="images/slide.jpg" alt="">
+              <div class="banner">Cùng nhau <span>Trải nghiệm</span> những <i>Điều thú vị</i>
+                <p>Còn rất nhiều những điều thú vị đang chờ chúng ta khám phá</p>
+              </div>
+            </li>
+            <li><img src="images/slide1.jpg" alt="">
+              <div class="banner">Cùng nhau <span>Trải nghiệm</span> những <i>Điều thú vị</i>
+                <p>Còn rất nhiều những điều thú vị đang chờ chúng ta khám phá</p>
+              </div>
+            </li>
+            <li><img src="images/slide2.jpg" alt="">
+              <div class="banner">Cùng nhau <span>Trải nghiệm</span> những <i>Điều thú vị</i>
+                <p>Còn rất nhiều những điều thú vị đang chờ chúng ta khám phá</p>
+              </div>
+            </li>
+            <li><img src="images/slide3.jpg" alt="">
+              <div class="banner">Cùng nhau <span>Trải nghiệm</span> những <i>Điều thú vị</i>
+                <p>Còn rất nhiều những điều thú vị đang chờ chúng ta khám phá</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page1_block">
+    <div class="container_12">
+      <div class="grid_6">
+        <h2>Chào mừng đến với blog của tôi</h2>
+        <br>
+        <img src="images/honkai1.jpg" alt="" class="img_inner fleft">
+        <div class="extra_wrapper style1">
+          <p class="text1"><a href="#">Click here</a> Để donate cho chúng tôi
+        </div>
+        <div class="clear"></div>
+        Nơi lưu giữ lại hành trình khám phá thế giới rộng lớn<br>
+        <a href="#" class="btn">More</a>
+      </div>
+      <div class="grid_5 prefix_1">
+        <h2 class="ic1">Tin mới</h2>
+        <ul class="list">
+          <li> <span>
+              <time datetime="2045-01-01">27<span>APR</span></time>
+            </span>
+            <div class="extra_wrapper">
+              <div class="col1"><a href="#">Honkai Star Rail đã bước qua phase 2 của phiên bản;</a>
+                <time datetime="2045-01-01">April 27.03.45</time>
+              </div>
+              Phase 2 đã đến cùng với sự xuất hiện của top tier Fu xuan 1 bảo hộ gần như là bắt buộc của team mono lượng
+              tử
+            </div>
+
+          </li>
+          <li> <span class="cnt">
+              <time datetime="2045-01-01">28<span>APR</span></time>
+            </span>
+            <div class="extra_wrapper">
+              <div class="col1"><a href="#">Fu Xuan xuất hiện với doanh thu khủng</a>
+                <time datetime="2045-01-01">April 28.03.45</time>
+              </div>
+              Chỉ sau 3 ngày ra mắt Fu xuan người đứng đầu sở thiên tượng đã có được doanh thu khủng với 8 triệu USD
+            </div>
+          </li>
+          <li> <span>
+              <time datetime="2045-01-01">29<span>APR</span></time>
+            </span>
+            <div class="extra_wrapper">
+              <div class="col1"><a href="#">Lynx ra mắt đưa team mono lượng tử lên top 1 meta hiện tại ;</a>
+                <time datetime="2045-01-01">April 29.03.45</time>
+              </div>
+              Lynx không chỉ là 1 hearler đơn thuần mà còn có khả năng hóa giải hiệu ứng khống chế bên cạnh đó còn buff
+              atk cho 1 đồng đội chỉ định ở e4
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content page1">
+    <div class="container_12">
+      <div class="grid_12"> <a href="#" class="next"></a><a href="#" class="prev"></a>
+        <h2>Các nhân vật hiện tại</h2>
+      </div>
+      <div class="clear"></div>
+      <ul class="carousel1">
+        <li class="grid_4"> <img src="images/asta___honkai_star_rail_by_nottiex_dfx0zor-pre.jpg" alt=""
+            class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Asta</a></p>
+            Một cô gái trẻ ham học hỏi và tràn đầy năng lượng, cô ấy là nhà nghiên cứu chính của Trạm Không Gian Herta.
+          </div>
+        </li>
+        <li class="grid_4"> <img src="images/honkai lynx.jpg" alt="" class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Lynx.</a></p>
+            Nhà thám hiểm Cánh Đồng Tuyết của Belobog, cô em út của nhà Landau. Là người điềm tĩnh, sức hành động rất
+            mạnh. Thường đến Cánh Đồng Tuyết thám hiểm một mình.
+          </div>
+        </li>
+        <li class="grid_4"> <img src="images/honkai-star-rail-seele-build-best.jpg" alt="" class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Seele.</a></p>
+            Thành viên dũng cảm của Lửa Ngầm, lớn lên trong Thành Phố Ngầm đầy hiểm nguy của Belobog, sớm đã làm quen
+            với việc tự thân vận động.
+          </div>
+        </li>
+        <li class="grid_4"> <img src="images/silver-wolf-honkai-star-rail-thumb.jpg" alt="" class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Silver Wolf.</a></p>
+            Hacker siêu cấp xem vũ trụ là một trò chơi.
+
+            Dù hệ thống bảo vệ có gai góc đến đâu thì Sói Bạc đều có thể phá giải một cách nhẹ nhàng. Cuộc chiến phòng
+            thủ và tấn công dữ liệu của Screwllum từ CLB Thiên Tài đã trở thành huyền thoại trong giới hacker.
+          </div>
+        </li>
+        <li class="grid_4"> <img src="images/kafka1.png" alt="" class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Kafka</a></p>
+            Nằm trong danh sách truy nã của công ty Hành Tinh Hòa Bình, thông tin của Kafka chỉ có hai thứ, là tên cô ấy
+            và một câu miêu tả: “Thích sưu tập áo khoác.” Người ta biết rất ít về thợ săn Stellaron này, ngoài việc cô
+            ấy là một trong những thành viên Elio tin tưởng nhất trong “Nô Lệ Của Số Phận”.
+          </div>
+        </li>
+        <li class="grid_4"> <img src="images/Honkai-Star-Rail-Fu-Xuan.jpg" alt="" class="img_inner fleft">
+          <div class="extra_wrapper pad1">
+            <p class="col2"><a href="#">Fu Xuan.</a></p>
+            Thủ lĩnh Sở Thiên Tượng Xianzhou Luofu. Dựa vào con mắt thứ ba và Ma Trận Tiên Tri để tiên đoán đường đi của
+            Xianzhou, đoán trước tốt xấu của sự việc.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom_block">
+    <div class="container_12">
+      <div class="grid_6">
+        <h2>Một vài mẹo </h2>
+        <p>Kỹ năng làm việc nhóm là một phần quan trọng trong cuộc sống đã theo bạn kể từ lúc còn ngồi trên ghế nhà trường, cho đến khi đi làm nơi công sở. Tuy nhiên, với rất nhiều người, làm việc nhóm hiệu quả chưa bao giờ là điều dễ dàng.</p><br>
+       
+      </div>
+      <div class="grid_4 prefix_2">
+        <h2 class="ic1">Any Question?</h2>
+        <img class="hobbies2"src="images/chibi_silver_wolf_honkai_starrail_render_by_mhesagnta_dfyq34u-pre.png" alt="" class="fleft img_inner">
+        <div class="extra_wrapper">
+          <div class="cont"> Call Us Free: <span>+1 800 559 6580</span> </div>
+        </div>
+        <div class="clear"></div>
+       
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+        <p>Nguồn được lấy từ :Pet Club &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a
+            href="http://www.templatemonster.com/">TemplateMonster.com</a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </footer>
+</body>
+
+</html>
