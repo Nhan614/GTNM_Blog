@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7</title>
+    <link rel="stylesheet" href="css/lab7.css">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 40px; ; cursor: pointer;">Nhan's bookstore</span>
+            <input style="border-radius: 40px; height: 20px;" type="text" placeholder="Tìm kiếm sách">
+            <div>
+                <span style="height: 30px;"> Thể loại: </span>
+                <select type="text" list="theLoai">
+                    <datalist id="theLoai">
+                        <option value="Đời sống">Đời sống</option>
+                        <option value="Hài hước">Hài hước</option>
+                        <option value="Lịch sử">Lịch sử</option>
+                        <option value="Phiêu lưu">Phiêu lưu</option>
+                        <option value="Viễn tưởng">Viễn tưởng</option>
+                        <option value="Truyện tranh" selected>Truyện tranh</option>
+
+                    </datalist>
+                </select>
+
+            </div>
+            <button class="btnLogin">Login</button>
+        </div>
+
+        <hr style="margin-bottom: 1px;">
+        <ul>
+            <li class="mnitem" style="color: aqua;">Danh mục sách</li>
+            <li class="mnitem">Sách bán chạy</li>
+            <li class="mnitem">Sách khuyến mãi</li>
+            <li class="mnitem">Giảm giá đặc biệt</li>
+        </ul>
+
+    </header>
+    <!-- container -->
+    <div>
+        <div style="height: 500px;">
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <span style="font-size: 30px; font-weight: 300;">Sách mới - Tái bản</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin: 70px;">
+
+                <img class="imgBooks" src="images/lab7/img3.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img2.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img1.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img4.jpg" alt="">
+
+
+
+            </div>
+        </div>
+        <div style="height: 500px;">
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <span style="font-size: 30px; font-weight: 300;">Truyện tranh - Tiểu thuyết</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; margin: 70px;">
+
+                <img class="imgBooks" src="images/lab7/img5.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img6.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img7.jpg" alt="">
+                <img class="imgBooks" src="images/lab7/img8.jpg" alt="">
+
+
+
+            </div>
+        </div>
+        <a onclick="openContactForm()">
+            <div class="lh" style="display: flex; flex-wrap: wrap; width: 100px;">
+                <img src="images/lab7/call.png" alt="" width="70px" style="margin-left: 15px;">
+                <span style="margin-left: 22px;color: blue;">Liên hệ</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Liên hệ -->
+    <style>
+        /* Styling for the popup form */
+        .popup {           
+            display: none;
+            transition: 0.5s;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: whitesmoke;
+            z-index: 1;
+            width: 300px;
+
+        }
+
+        /* Styling for the overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+        }
+    </style>
+    <!-- Popup Form -->
+    <div id="contactForm" class="popup">
+        <h2>Liên hệ</h2>
+        <form action="" method="post">
+            <input type="text" required placeholder="Họ và tên"
+                style="width: 250px; height: 30px; margin: 0px 0px 0px 20px;">
+            <input type="email" required placeholder="Email" style="width: 250px; height: 30px; margin: 20px;">
+
+            <textarea id="text" name="message" style="margin-left: 20px; max-width: 250px; width: 250px; height: 200px;"
+                placeholder="Nhập lời nhắn"></textarea>
+
+                <div style="display: flex ;">
+                    <button onclick="closeContactForm()"
+                    style="width: 150px;height: 40px; margin-top: 30px; background-color: red; border-radius: 5px;">Close</button>
+                <button type="submit"
+                    style="margin-left: 20%; width: 150px;height: 40px; margin-top: 30px; background-color: #0d6efd; border-radius: 5px;">Submit</button>
+                </div>
+          
+        </form>
+
+    </div>
+
+    <!-- Overlay Background -->
+    <div id="overlay" class="overlay" onclick="closeContactForm()"></div>
+
+    <script>
+        function openContactForm() {
+            
+            document.getElementById("contactForm").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeContactForm() {
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    <a href="#">
+        <div class="top">
+            <span style="font-size: 40px;">^</span>
+        </div>
+    </a>
+    <footer style="margin-top: 50px;">
+        <div style="display: flex; justify-content: center;">
+            <span style="color: white; font-size: 20px;">@ Trang web do Nguyễn Trọng Nhân thực hiện</span>
+        </div>
+    </footer>
+</body>
+
+</html>
