@@ -2,9 +2,11 @@ body {
     margin: 0px;
     position: relative;
 }
-html{
+
+html {
     overflow-y: scroll;
 }
+
 header {
     margin: 0px;
     margin-top: 20px;
@@ -42,29 +44,33 @@ li:hover {
     border-radius: 35px;
     height: 40px;
 }
-.btnLogin:hover{
+
+.btnLogin:hover {
     transition: 0.5s;
-    background-color: orange;
+    background-color: red;
     cursor: pointer;
 }
-.imgBooks{
+
+.imgBooks {
     width: 200px;
     height: 300px;
     margin: 10px;
     transition: 0.5s;
 }
-.imgBooks:hover{
+
+.imgBooks:hover {
     transition: 0.5s;
     width: 250px;
     height: 350px;
 }
 
-footer{
+footer {
     padding: 30px;
     background-color: green;
 }
-.lh{
-    
+
+.lh {
+
     position: fixed;
     bottom: 20px;
     margin-left: 20px;
@@ -72,7 +78,14 @@ footer{
     background-color: whitesmoke;
     padding-bottom: 5px;
 }
-.top{
+
+.lh:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: red;
+}
+
+.top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -81,7 +94,8 @@ footer{
     padding-left: 5px;
     padding-right: 5px;
 }
-.boxlh{
+
+.boxlh {
     width: 400px;
     height: 500px;
     background-color: aqua;
