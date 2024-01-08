@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab8</title>
+    <link rel="stylesheet" href="css/lab8.css">
+</head>
+
+<body>
+    <header>
+        <span style="align-items: center; display: flex; font-size: 40px;">Nhan's car</span>
+        <div>
+            <ul class="nav-mn">
+                <li class="nav-item active">Trang chủ</li>
+                <li class="nav-item">Giới thiệu</li>
+                <li class="nav-item">Sản phẩm</li>
+                <li class="nav-item">Khuyến mãi</li>
+            </ul>
+
+        </div>
+        <div style="display: flex; align-items: center;">
+            <input type="text" placeholder="Nhập tên xe" style="margin-left: 30px; height: 30px; align-items: center;">
+            <button class="btn-login" style="margin-left: 0px;">Tìm kiếm</button>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <button class="btn-login">Đăng nhập</button>
+        </div>
+
+
+    </header>
+    <hr>
+    <!-- container -->
+
+    <!-- hero -->
+    <div>
+
+        <div class="wave-text">Chào mừng đến với Nhan's car!</div>
+        <img src="images/lab8/hero.jpg" alt="" width="100%" style="position: relative;">
+
+    </div>
+    <hr>
+    <p style="display: flex; justify-content: center;font-size: 50px;" class="wave-text"> Xe mới </p>
+    <div>
+        <p style="font-size: 30px; margin-bottom: 5px;">Hãng</p>
+        <select name="list" id="carlist" style="width: 200px; height: 30px;">
+            <option value="">Toyota</option>
+            <option value="">Yamaha</option>
+            <option value="" selected>VinFast</option>
+            <option value="">Lambogini</option>
+            <option value="">Ford</option>
+        </select>
+    </div>
+
+
+    <hr>
+    <!-- list car -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+        <div class="box-xe">
+            <img src="images/lab8/xe1.jpg" alt="" class="img-xe">
+            <span class="text tname">Vinfast Lux</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">200.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe2.jpg" alt="" class="img-xe">
+            <span class="text tname">VIOS 1.5E-MT</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">300.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe3.jpg" alt="" class="img-xe">
+            <span class="text tname">COROLLA ALTIS 1.8G</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">350.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe4.jpg" alt="" class="img-xe">
+            <span class="text tname">CAMRY 2.0G</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">1.200.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe5.jpg" alt="" class="img-xe">
+            <span class="text tname">INNOVA CROSS HEV</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">1.00.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe6.jpg" alt="" class="img-xe">
+            <span class="text tname">VELOZ CROSS CVT TOP</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">720.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe7.jpg" alt="" class="img-xe">
+            <span class="text tname">INNOVA 2.0E</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">500.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe8.jpg" alt="" class="img-xe">
+            <span class="text tname">YARIS CROSS</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">900.000.000 VND</span>
+        </div>
+        <div class="box-xe">
+            <img src="images/lab8/xe9.jpg" alt="" class="img-xe">
+            <span class="text tname">FORTUNER 2.8AT 4X4</span>
+            <span class="text">Giá từ:</span>
+            <span class="text">1.500.000.000 VND</span>
+        </div>
+
+    </div>
+    </div>
+    <a onclick="openContactForm()">
+        <div class="lh" style="display: flex; flex-wrap: wrap; width: 100px;">
+            <img src="images/lab7/call.png" alt="" width="70px" style="margin-left: 15px;">
+            <span style="margin-left: 22px;color: blue;">Liên hệ</span>
+        </div>
+    </a>
+    <!-- Liên hệ -->
+    <style>
+        /* Styling for the popup form */
+        .popup {
+            display: none;
+            transition: 0.5s;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: whitesmoke;
+            z-index: 1;
+            width: 300px;
+
+        }
+
+        /* Styling for the overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+        }
+    </style>
+    <!-- Popup Form -->
+    <div id="contactForm" class="popup">
+        <h2>Liên hệ</h2>
+        <form action="" method="post">
+            <input type="text" required placeholder="Họ và tên"
+                style="width: 250px; height: 30px; margin: 0px 0px 0px 20px;">
+            <input type="email" required placeholder="Email" style="width: 250px; height: 30px; margin: 20px;">
+
+            <textarea id="text" name="message" style="margin-left: 20px; max-width: 250px; width: 250px; height: 200px;"
+                placeholder="Nhập lời nhắn"></textarea>
+
+            <div style="display: flex ;">
+                <button onclick="closeContactForm()"
+                    style="width: 150px;height: 40px; margin-top: 30px; background-color: red; border-radius: 5px;">Close</button>
+                <button type="submit"
+                    style="margin-left: 20%; width: 150px;height: 40px; margin-top: 30px; background-color: #0d6efd; border-radius: 5px;">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Overlay Background -->
+    <div id="overlay" class="overlay" onclick="closeContactForm()"></div>
+
+    <script>
+        function openContactForm() {
+
+            document.getElementById("contactForm").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeContactForm() {
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    <a href="#">
+        <div class="top">
+            <span style="font-size: 40px;">^</span>
+        </div>
+    </a>
+    </div>
+
+    <!-- footer -->
+    <footer style="margin-top: 50px; background-color: rgb(237, 89, 89); height: 10vh;">
+        <div style="display: flex; justify-content: center;">
+            <span style="color: rgb(47, 22, 113); font-size: 20px; margin-top: 2%;">@ Trang web do Nguyễn Trọng Nhân
+                thực hiện</span>
+        </div>
+    </footer>
+</body>
+
+</html>
