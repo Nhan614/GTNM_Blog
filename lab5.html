@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Design</title>
+  <title>Lab5</title>
   <meta charset="utf-8">
   <link rel="icon" href="images/favicon.ico">
   <link rel="shortcut icon" href="images/favicon.ico">
@@ -29,7 +29,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body onload="renderListBook()">
   <header>
     <div class="container_12">
       <div class="grid_12">
@@ -53,32 +53,21 @@
 
               <li>
                 <div class="dropdown">
-                  <button style="color: orange; cursor: pointer;" class="dropbtn">Lab4
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="requirement.html">Requirement</a>
-                    <a href="design.html">Design</a>
-                    <a href="implement.html">Implement</a>
-                  </div>
-                </div>
-              </li>
-
-              <!-- lab 6 -->
-
-              <li>
-                <div class="dropdown">
                   <button style="color: orange; cursor: pointer;" class="dropbtn">Labs
                     <i class="fa fa-caret-down"></i>
                   </button>
                   <div class="dropdown-content">
-                    <a href="lab5/index.html">Lab5</a>
-                    <a href="lab6.html">Lab6</a>
-                    <a href="lab7.html">Lab7</a>
-                    <a href="lab8.html">Lab8</a>
+                    <div class="dropdown-content">
+                        <a href="lab4.html">Lab4</a>
+                        <a href="lab5.html">Lab5</a>
+                        <a href="lab6.html">Lab6</a>
+                        <a href="lab7.html">Lab7</a>
+                        <a href="lab8.html">Lab8</a>
+                      </div>
                   </div>
                 </div>
               </li>
+            </li>
               <li><a href="contacts.html">Contacts </a></li>
             </ul>
           </nav>
@@ -88,39 +77,52 @@
       </div>
     </div>
   </header>
+ <!-- Tab links -->
+ 
+<div class="tab">
+  <button class="tablinks" ><strong>Lab5</strong></button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+  <a href="lab5/index.html"><button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button></a>
+  
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Requirement</h3>
+  <div class="requi">
+    <p style="font-size: 30px; color: blue;margin: 10px;">Yêu cầu:</p>
+    <p style="font-size: 20px; color: black; margin: 5px;">(1) Tạo ra một user scenario
+        (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó thiết kế trên Figma rồi chuyển sang html tương ứng cho thiết kế này.
+        Upload lên github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).
+        
+        
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Design</h3>
   <div style="display: flex; justify-content: center;">
-    <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
-      <a href="images/thietKe1.jpg">
-        <img src="images/thietKe1.jpg" alt="Thiết kế">
-      </a>      
-      <br>
-      <p style="font-size: 15px; color: blue; margin: 0px 0px 5px 80px;">Tải về ảnh thiết kế</p>
-      <a href="images/thietKe1.jpg" download>
-        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
-      </a>
-
-
-      <br>
-      <p style="font-size: 15px; color: red; margin: 10px 0px 5px 80px;">Đến trang Figma</p>
-      <a
-        href="https://www.figma.com/file/VuKGFiDVLr18JtbBhcof4L/Untitled?type=design&node-id=0%3A1&mode=design&t=yKCVRV983EqVhjsc-1" target="_blank">
-        <button style="margin: 0px 0px 5px 93px; height: 30px;">Go to Figma</button>
-      </a>
-
-    </div>
+    
 
     <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
-      <a href="images/thietKe2.jpg">
-        <img src="images/thietKe2.jpg" alt="Thiết kế">
+      <a href="images/lab5.jpg">
+        <img src="images/lab5.jpg" alt="Thiết kế">
       </a>
       
       <br>
       <p style="font-size: 15px; color: blue; margin: 10px 0px 5px 50px;">Tải về ảnh thiết kế trên giấy</p>
-      <a href="images/thietKe2.jpg" download>
+      <a href="images/lab5.jpg" download>
         <button style="margin: 0px 0px 10px 100px; height: 30px;">Download</button>
       </a>
     </div>
   </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ 
+ <a href="implement.html"></a>
+</div>
 </body>
 
 </html>

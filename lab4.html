@@ -51,16 +51,23 @@
               <!-- <li><a href="services.html">Services</a></li> -->
 
 
-              <li class="current"><div class="dropdown">
-                <button class="dropbtn">Lab4
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="requirement.html">Requirement</a>
-                  <a href="design.html" >Design</a>
-                  <a href="implement.html" >Implement</a>
+              <li>
+                <div class="dropdown">
+                  <button style="color: orange; cursor: pointer;" class="dropbtn">Labs
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <div class="dropdown-content">
+                      <a href="lab4.html">Lab4</a>
+                      <a href="lab5.html">Lab5</a>
+                      <a href="lab6.html">Lab6</a>
+                      <a href="lab7.html">Lab7</a>
+                      <a href="lab8.html">Lab8</a>
+                    </div>
+                  </div>
                 </div>
-              </div></li>
+              </li>
+            </li>
               <li><a href="contacts.html">Contacts </a></li>
             </ul>
           </nav>
@@ -70,6 +77,65 @@
       </div>
     </div>
   </header>
+ <!-- Tab links -->
+ 
+<div class="tab">
+  <button class="tablinks" ><strong>Lab4</strong></button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+  
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Requirement</h3>
+  <div class="requi">
+    <p style="font-size: 30px; color: blue;margin: 10px;">Yêu cầu:</p>
+    <p style="font-size: 20px; color: black; margin: 5px;">Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học, giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên trong lớp, trong nhóm không được chọn các đối tượng giống nhau. 
+      <br> Tạo 1 menu Lab4 trên website cá nhân (sử dụng thẻ <a> trong html) bao gồm các tab sau:</p>
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Design</h3>
+  <div style="display: flex; justify-content: center;">
+    <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
+      <a href="images/thietKe1.jpg">
+        <img src="images/thietKe1.jpg" alt="Thiết kế">
+      </a>      
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 0px 0px 5px 80px;">Tải về ảnh thiết kế</p>
+      <a href="images/thietKe1.jpg" download>
+        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
+      </a>
+
+
+      <br>
+      <p style="font-size: 15px; color: red; margin: 10px 0px 5px 80px;">Đến trang Figma</p>
+      <a
+        href="https://www.figma.com/file/VuKGFiDVLr18JtbBhcof4L/Untitled?type=design&node-id=0%3A1&mode=design&t=yKCVRV983EqVhjsc-1" target="_blank">
+        <button style="margin: 0px 0px 5px 93px; height: 30px;">Go to Figma</button>
+      </a>
+
+    </div>
+
+    <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
+      <a href="images/thietKe2.jpg">
+        <img src="images/thietKe2.jpg" alt="Thiết kế">
+      </a>
+      
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 10px 0px 5px 50px;">Tải về ảnh thiết kế trên giấy</p>
+      <a href="images/thietKe2.jpg" download>
+        <button style="margin: 0px 0px 10px 100px; height: 30px;">Download</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ 
   <div class="library">
     <div>
     <div class="form-library">
@@ -99,7 +165,12 @@
     </div>
   </div>
     <div class="list-library">
-      <p class="l4-1">Thư viện</p>
+      <div style="margin-bottom: 20px; margin-top: 5px;">      
+      <span class="l4-1">Thư viện</span>     
+        <label style="color: black;font-size: 20px; margin: 7px 0px 0px 300px;"> Tìm sách: </label>
+        <input type="text" placeholder="Nhập tên sách" ></input>  
+        <button onclick=" search()">Tìm kiếm</button>
+      </div>
 
       <table class="table-1" id="tb-1" cellpadding="0" >
         <tr class="l4-tb">
@@ -114,6 +185,7 @@
       </table>
     </div>
   </div>
+</div>
 </body>
 
 </html>

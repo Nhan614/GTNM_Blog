@@ -52,19 +52,7 @@
                             </ul> -->
               </li>
               <!-- <li><a href="services.html">Services</a></li> -->
-              <li>
-                <div class="dropdown">
-                  <button style="color: orange; cursor: pointer;" class="dropbtn">Lab4
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="requirement.html">Requirement</a>
-                    <a href="design.html">Design</a>
-                    <a href="implement.html">Implement</a>
-                  </div>
-                </div>
-              </li>
-
+             
               <!-- lab 6 -->
 
               <li>
@@ -73,10 +61,13 @@
                     <i class="fa fa-caret-down"></i>
                   </button>
                   <div class="dropdown-content">
-                    <a href="lab5/index.html">Lab5</a>
-                    <a href="lab6.html">Lab6</a>
-                    <a href="lab7.html">Lab7</a>
-                    <a href="lab8.html">Lab8</a>
+                    <div class="dropdown-content">
+                      <a href="lab4.html">Lab4</a>
+                      <a href="lab5.html">Lab5</a>
+                      <a href="lab6.html">Lab6</a>
+                      <a href="lab7.html">Lab7</a>
+                      <a href="lab8.html">Lab8</a>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -91,11 +82,32 @@
     </div>
   </header>
 
-  <div style="display: flex;justify-content: center;">
-    <span class="lab6-title"> Lab 6</span>
-  </div>
+  <!-- Tab links -->
+ 
+<div class="tab">
+  <button class="tablinks" ><strong>Lab6</strong></button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+  
+</div>
 
-  <!-- e -->
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Requirement</h3>
+  <div class="requi">
+    <p style="font-size: 30px; color: blue;margin: 10px;">Yêu cầu:</p>
+    <p style="font-size: 20px; color: black; margin: 5px;">Trong menu Labs, tạo 1 menu Lab6 (file lab6.html)  sau đó tạo 2 tab Ex1, Ex2
+      Ex1: Thiết kế một trang Web đơn giản sử dụng mẫu F-pattern ==> chuyển sang html (ex1.html)
+      Ex2: Thiết kế một trang Web sử dụng mẫu Z-pattern ==> chuyển sang html (ex2.html)
+      Với cả Ex1, Ex2: Tạo 2 tab Design và Implementation: 
+                   + Design: chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế (thiết kế trên giấy và Figma), có nút Download để download file thiết kế về nếu muốn
+                   + Implementation: nội dung phần hiện thực trên html
+      Upload lên github</p>
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
   <div style="display: flex; justify-content: center;">
     <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
 
@@ -150,6 +162,66 @@
 
     </div>
   </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ 
+  <div style="display: flex; justify-content: center;">
+    <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
+
+      <img src="images/lab6/tk1.jpg" alt="Thiết kế">
+      <hr>
+      <img src="images/lab6/tkf1.jpg" alt="Thiết kế">
+      <hr>
+      <p style="font-size: 30px; color: blue; margin: 0px 0px 5px 113px;">Ex1</p>
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 0px 0px 5px 85px;">Đến trang web</p>
+      <a href="ex1.html" target="_blank">
+        <button style="margin: 0px 0px 5px 105px; height: 30px;">F-Pattern</button>
+      </a>
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 10px 0px 5px 45px;">Tải về ảnh thiết kế trên giấy</p>
+      <a href="images/lab6/tk1.jpg" download>
+        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
+      </a>
+
+      
+      <br>
+      <p style="font-size: 15px; color: red; margin: 10px 0px 5px 40px;">Tải về ảnh thiết kế trên Figma</p>
+      <a href="images/lab6/tkf1.jpg" download>
+        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
+      </a>
+
+    </div>
+
+    <div style="border: 2px solid #CCC; width: 300px; margin: 30px 0px 0px 30px;">
+
+      <img src="images/lab6/tk2.jpg" alt="Thiết kế" height="260px" >
+      <hr>
+      <img src="images/lab6/tkf2.jpg" alt="Thiết kế" style="margin-top: 10px;">
+      <hr>
+      <p style="font-size: 30px; color: blue; margin: 0px 0px 5px 113px;">Ex2</p>
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 0px 0px 5px 85px;">Đến trang web</p>
+      <a href="ex2.html" target="_blank">
+        <button style="margin: 0px 0px 5px 105px; height: 30px;">Z-Pattern</button>
+      </a>
+      <br>
+      <p style="font-size: 15px; color: blue; margin: 10px 0px 5px 45px;">Tải về ảnh thiết kế trên giấy</p>
+      <a href="images/lab6/tk2.jpg" download>
+        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
+      </a>
+      <br>
+      
+      <p style="font-size: 15px; color: red; margin: 10px 0px 5px 40px;">Tải về ảnh thiết kế trên Figma</p>
+      <a href="images/lab6/tkf2.jpg" download>
+        <button style="margin: 0px 0px 5px 100px; height: 30px;">Download</button>
+      </a>
+
+    </div>
+  </div>
+
+ 
 
   <footer>
     <div class="container_12">
